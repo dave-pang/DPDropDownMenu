@@ -1,22 +1,22 @@
 {
   "name": "DPDropDownMenu",
   "version": "0.1.0",
-  "summary": "A short description of DPDropDownMenu.",
+  "summary": "Common DPDropDownMenu",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yainoma00@gmail.com/DPDropDownMenu",
+  "homepage": "https://github.com/dave-ios/DPDropDownMenu",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "yainoma00@gmail.com": "dave.pang@kakaocorp.com"
+    "dave.pang": "yainoma00@gmail.com"
   },
   "source": {
-    "git": "https://github.com/yainoma00@gmail.com/DPDropDownMenu.git",
+    "git": "https://github.com/dave-ios/DPDropDownMenu.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.3"
   },
   "source_files": "DPDropDownMenu/Classes/**/*"
 }
