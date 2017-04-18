@@ -1,0 +1,23 @@
+PODS:
+  - DPDropDownMenu (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - DPDropDownMenu (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  DPDropDownMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DPDropDownMenu: fc3124eee576b3760fab5f284ac14c5c671506f5
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 37f447b9f86d4f06e64b493f6039476ea58be206
+
+COCOAPODS: 1.2.1

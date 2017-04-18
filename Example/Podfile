@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DPDropDownMenu_Example' do
+  pod 'DPDropDownMenu', :path => '../'
+
+  target 'DPDropDownMenu_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
