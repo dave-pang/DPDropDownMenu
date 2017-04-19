@@ -29,13 +29,13 @@ import DPDropDownMenu
 
 Declare an array of texts that are served as the item in the menu.
 ```swift
-menu1.items = [DPItem(image: UIImage(named:"favourite"), title: "item0"),
-               DPItem(image: UIImage(named:"cart"), title: "item1"),
-               DPItem(image: UIImage(named:"mouse"), title: "item2"),
-               DPItem(image: UIImage(named:"search"), title: "item3"),
-               DPItem(title: "item3"),
-               DPItem(title: "item4"),
-               DPItem(title: "item5")]
+let items = [DPItem(title: "item0"),
+             DPItem(title: "item1"),
+             DPItem(title: "item2")]
+
+let menu = DPDropDownMenu(items: items)
+menu.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
+view.addSubview(menu)
 ```
 The handler `public var didSelectedItemIndex: ((Int) -> (Void))?` would be called when menu item is tapped. So place code in here to do whatever you want. For example
 ```swift
