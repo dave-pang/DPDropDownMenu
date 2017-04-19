@@ -42,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* DPDropDownMenu_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPDropDownMenu_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		95D72B8FE34E5B92D47ED232 /* DPDropDownMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DPDropDownMenu.podspec; path = ../DPDropDownMenu.podspec; sourceTree = "<group>"; };
-		98812A52A046A634E4214863 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		95D72B8FE34E5B92D47ED232 /* DPDropDownMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DPDropDownMenu.podspec; path = ../DPDropDownMenu.podspec; sourceTree = "<group>"; };
+		98812A52A046A634E4214863 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E349A686466DC69FF9B5979F /* Pods-DPDropDownMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPDropDownMenu_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DPDropDownMenu_Example/Pods-DPDropDownMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EAD3F1D20B1C100D7473A68B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EAD3F1D20B1C100D7473A68B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB6584773CF562F2CD5E06A9 /* Pods_DPDropDownMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPDropDownMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 

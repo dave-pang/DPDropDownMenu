@@ -115,7 +115,17 @@ public class DPDropDownMenu: UIView {
         }
     }
     
-    fileprivate var button: UIButton!
+    fileprivate var button: UIButton! {
+        didSet {
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.addTarget(self, action: #selector(didSelectedButton(_:)), for: .touchUpInside)
+            button.backgroundColor = headerBackgroundColor
+            button.setTitleColor(headerTextColor, for: .normal)
+            button.setTitle(headerTitle, for: .normal)
+            button.titleLabel?.font = headerTextFont
+        }
+    }
+    
     fileprivate var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
@@ -134,19 +144,32 @@ public class DPDropDownMenu: UIView {
     
     public var didSelectedItemIndex: ((Int) -> (Void))?
     
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setup()
+    }
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        button = UIButton(type: .custom)
-        button.frame = bounds
-        button.addTarget(self, action: #selector(didSelectedButton(_:)), for: .touchUpInside)
-        button.backgroundColor = headerBackgroundColor
-        button.setTitleColor(headerTextColor, for: .normal)
-        button.setTitle(headerTitle, for: .normal)
-        button.titleLabel?.font = headerTextFont
-        addSubview(button)
+        setup()
     }
     
+    public convenience init(items: [DPItem]) {
+        self.init(frame: .zero)
+        
+        self.items = items
+    }
+    
+    private func setup() {
+        button = UIButton(type: .custom)
+        addSubview(button)
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[b]|", options: [], metrics: [:], views: ["b": button]))
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[b]|", options: [], metrics: [:], views: ["b": button]))
+    }
+        
     @objc private func didSelectedButton(_ sender: UIButton) {
         isFold = !isFold
     }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,16 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-bB-8ty" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
-                                <rect key="frame" x="21" y="46" width="190" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="headerTitle" value="Menu1"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FF-os-bnT" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
-                                <rect key="frame" x="257" y="46" width="102" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8FF-os-bnT" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
+                                <rect key="frame" x="247.5" y="46" width="112.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BIC-Au-nWu"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="headerTitle" value="Menu2"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="headerBackgroundColor">
@@ -38,9 +34,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-Ax-3uq" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
-                                <rect key="frame" x="21" y="151" width="338" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-Ax-3uq" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
+                                <rect key="frame" x="15" y="126" width="345" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="18p-gz-f1K"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="headerTitle" value="Menu3"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="headerTextColor">
@@ -66,9 +64,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yzt-MG-yyA" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
-                                <rect key="frame" x="21" y="288" width="338" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yzt-MG-yyA" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
+                                <rect key="frame" x="15" y="236" width="345" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Fsh-Ov-G3h"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="headerTitle" value="Menu4"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedMenuBackgroundColor">
@@ -79,8 +79,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-bB-8ty" customClass="DPDropDownMenu" customModule="DPDropDownMenu">
+                                <rect key="frame" x="15" y="46" width="187.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hbi-HE-cjt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerTitle" value="Menu1"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8FF-os-bnT" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.3" id="7PY-wJ-MrM"/>
+                            <constraint firstItem="Yzt-MG-yyA" firstAttribute="top" secondItem="nq7-Ax-3uq" secondAttribute="bottom" constant="30" id="9VU-Uy-uVo"/>
+                            <constraint firstAttribute="trailing" secondItem="Yzt-MG-yyA" secondAttribute="trailing" constant="15" id="AGd-OP-YeO"/>
+                            <constraint firstAttribute="trailing" secondItem="nq7-Ax-3uq" secondAttribute="trailing" constant="15" id="HhW-3Y-IQA"/>
+                            <constraint firstItem="nq7-Ax-3uq" firstAttribute="top" secondItem="8FF-os-bnT" secondAttribute="bottom" constant="30" id="IIe-1B-kFH"/>
+                            <constraint firstItem="nq7-Ax-3uq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="ORB-hs-kmK"/>
+                            <constraint firstItem="8FF-os-bnT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="UC2-xg-Ivm"/>
+                            <constraint firstItem="oJq-bB-8ty" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.5" id="Ut5-ND-kDl"/>
+                            <constraint firstItem="oJq-bB-8ty" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="XlL-6K-kjb"/>
+                            <constraint firstItem="Yzt-MG-yyA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="YmD-5D-cG0"/>
+                            <constraint firstItem="oJq-bB-8ty" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="ntM-xy-MFq"/>
+                            <constraint firstAttribute="trailing" secondItem="8FF-os-bnT" secondAttribute="trailing" constant="15" id="xRG-KY-C8f"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="menu1" destination="oJq-bB-8ty" id="ewz-SW-OaN"/>
