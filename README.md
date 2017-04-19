@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/DPDropDownMenu.svg?style=flat)](http://cocoapods.org/pods/DPDropDownMenu)
 [![Platform](https://img.shields.io/cocoapods/p/DPDropDownMenu.svg?style=flat)](http://cocoapods.org/pods/DPDropDownMenu)
 
+![](https://github.com/dave-ios/DPDropDownMenu/blob/master/demo.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -20,6 +22,49 @@ it, simply add the following line to your Podfile:
 pod "DPDropDownMenu"
 ```
 
+## Usage
+```swift
+import DPDropDownMenu
+```
+
+Declare an array of texts that are served as the item in the menu.
+```swift
+menu1.items = [DPItem(image: UIImage(named:"favourite"), title: "item0"),
+               DPItem(image: UIImage(named:"cart"), title: "item1"),
+               DPItem(image: UIImage(named:"mouse"), title: "item2"),
+               DPItem(image: UIImage(named:"search"), title: "item3"),
+               DPItem(title: "item3"),
+               DPItem(title: "item4"),
+               DPItem(title: "item5")]
+```
+The handler `public var didSelectedItemIndex: ((Int) -> (Void))?` would be called when menu item is tapped. So place code in here to do whatever you want. For example
+```swift
+menu1.didSelectedItemIndex = { index in
+    print("did selected index: \(index)")
+}
+```
+### Customize property
+```swift
+@IBInspectable public var visibleItemCount: Int = 3
+    
+@IBInspectable public var headerTitle: String = "Header"
+
+@IBInspectable public var headerTextColor: UIColor = .white 
+
+@IBInspectable public var headerBackgroundColor: UIColor = .orange 
+
+@IBInspectable public var menuTextColor: UIColor = .black 
+
+@IBInspectable public var menuBackgroundColor: UIColor = .white 
+
+@IBInspectable public var selectedMenuTextColor: UIColor = .orange
+
+@IBInspectable public var selectedMenuBackgroundColor: UIColor = .white 
+
+@IBInspectable public var headerTextFont: UIFont = UIFont.systemFont(ofSize: 14) 
+
+@IBInspectable public var menuTextFont: UIFont = UIFont.systemFont(ofSize: 14) 
+```
 ## Author
 
 yainoma00@gmail.com, dave.pang@kakaocorp.com
