@@ -67,7 +67,7 @@ menu1.didSelectedItemIndex = { index in
 ```
 ## Author
 
-yainoma00@gmail.com, dave.pang@kakaocorp.com
+yainoma00@gmail.com
 
 ## License
 
