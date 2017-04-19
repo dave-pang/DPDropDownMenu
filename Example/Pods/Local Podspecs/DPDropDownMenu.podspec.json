@@ -1,6 +1,6 @@
 {
   "name": "DPDropDownMenu",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Common DPDropDownMenu",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/dave-ios/DPDropDownMenu",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/dave-ios/DPDropDownMenu.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.3"
